@@ -25,9 +25,9 @@ void ModuleList::onRender() {
 	for (auto modName : moduleNames) {
 		float textWidth = RenderUtils::GetTextWidth(modName, 1.0f);
 		float width = screenRes.x - textWidth;
-		RenderUtils::RenderText(modName, Vec2(width - 5, indexY * 10 + 5), MC_Colour(255, 255, 255), 1.0f, 1.0f);
-		RenderUtils::FillRectangle(Vec4(width - 7, indexY * 10 + 5, width + textWidth - 3, indexY * 10 + 15), MC_Colour(50, 50, 50), .3f);
-		RenderUtils::DrawRectangle(Vec4(width - 7, indexY * 10 + 5, width + textWidth - 3, indexY * 10 + 15), MC_Colour(255, 110, 30), .3f, 1.5f);
+		RenderUtils::RenderText(modName, Vec2(width - 5, indexY * 10 + 5), MC_Colour(0, 0, 0), 1.0f, 1.0f);
+		RenderUtils::FillRectangle(Vec4(width - 7, indexY * 10 + 5, width + textWidth - 3, indexY * 10 + 15), MC_Colour(32, 32, 32), .3f);
+		RenderUtils::DrawRectangle(Vec4(width - 7, indexY * 10 + 5, width + textWidth - 3, indexY * 10 + 15), MC_Colour(100, 100, 100), .3f, 1.5f);
 		indexY++;
 	};
 
