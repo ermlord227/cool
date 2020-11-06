@@ -22,7 +22,7 @@ void TabGui::onRender() {
 
 	float categoryBoxWidth = RenderUtils::GetTextWidth(Utils::SortArrayOfStrings(ClientHandler::CategoriesToString(Categories)).back(), 1.0f);
 
-	RenderUtils::RenderText("Infernus", Vec2(15, 10), MC_Colour(255, 110, 30), 1.0f, 1.0f);
+	RenderUtils::RenderText("erm client", Vec2(15, 10), MC_Colour(32, 32, 32), 1.0f, 1.0f);
 	for (auto Category : Categories) {
 		RenderUtils::RenderText(categorySelected && selectedCategory == indexYPos ? Category->name + " > " : Category->name, Vec2(15, indexYPos * 10 + 20), categorySelected && selectedCategory == indexYPos ? MC_Colour(0, 255, 128) : MC_Colour(200, 200, 200), 1.0f, 1.0f);
 		indexYPos++;
