@@ -50,9 +50,9 @@ private:
 	bool setPositions = false;
 	std::vector<Window*> windows;
 
-	MC_Colour textColour = MC_Colour(255, 255, 255);
-	MC_Colour windowBarColour = MC_Colour(255, 128, 0);
-	MC_Colour backgroundColour = MC_Colour(20, 20, 20);
+	MC_Colour textColour = MC_Colour(0, 0, 0);
+	MC_Colour windowBarColour = MC_Colour(100, 100, 100);
+	MC_Colour backgroundColour = MC_Colour(32, 32, 32);
 };
 
 void ClickGui::onRender() {
